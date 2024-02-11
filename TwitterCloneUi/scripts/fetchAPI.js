@@ -13,6 +13,9 @@ export async function postCreateUser(formObject) {
       })
   })
   if(res.ok){
+    setTimeout(function(){ // setTimeout acts as a timer before the page redirects to another page
+        window.location.replace("index.html"); // redirects to index.html or the login page
+    }, 3000);
       return true;
   } else {
       return false;
@@ -39,6 +42,10 @@ export async function postLogIn() {
       console.log(`User token: ${userToken}`);
       localStorage.setItem("token", userToken)
       console.log(localStorage)
+    
+      setTimeout(function(){ // setTimeout acts as a timer before the page redirects to another page
+        window.location.replace("signup.html"); // redirects to the home page
+    }, 3000);
   } else {
       console.log('login fails')
   }
