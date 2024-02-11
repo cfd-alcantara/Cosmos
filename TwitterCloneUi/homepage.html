@@ -40,7 +40,7 @@
           <img class="file-input" src="homepage-img/file-input.png" />
           <img class="image-input" src="homepage-img/image-input.png" />
           
-          <div class="timeline-placeholder"></div></div>
+          <div class="timeline-placeholder" id="posts-container"></div></div>
         </div>        
       </div>
     </div>
@@ -52,7 +52,7 @@
       </div>
       <textarea class="popup-input" id="popupInput" placeholder="Tell your cosmics tales!" maxlength="280"></textarea>
       <div class="popup-actions">
-        <button class="popup-button" onclick="postCreatePost()">Post</button>
+        <button class="popup-button" onclick="postCreatePost(),closePopup(),getPosts()">Post</button>
         <button class="popup-button" onclick="closePopup()">Cancel</button>
       </div>
     </div>
