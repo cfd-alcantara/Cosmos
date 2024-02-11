@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/homepage-style.css" />
+    <link rel="stylesheet" href="./styles/homepage-posts-timeline.css" />
+    <link rel="stylesheet" href="./styles/homepage-timeline-style.css" />
+
+    <link rel="stylesheet" href="./styles/homepage-mediaquery.css" />
+    <link rel="stylesheet" href="./styles/popup-post.css" />
+
+    <script src="./scripts/homepage-post-button.js" defer></script>
+    <script src="./scripts/homepage-post-to-timeline.js" defer></script>
+    <script src="./scripts/fetchAPI.js  "></script>
+  </head>
+  <body>
+    <div class="overlay-page" id="overlayPage"></div>
+    <div class="home-page" id="blurPage">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="text-wrapper">Cosmos</div>
+            <img class="asstro-logo" src="homepage-img/asstro-logo.png" />
+          </div>
+          <div class="overlap-2">
+            <article><div class="sidebar-post" onclick="openPopup()">Post</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="h" class="sidebar-icons"><div class="sidebar-left"><a href=homepage.html>Home</a></div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="n" class="sidebar-icons"><div class="sidebar-left">Notifications</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="t" class="sidebar-icons"><div class="sidebar-left">Trending</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="m" class="sidebar-icons"><div class="sidebar-left"><a href=profilepage.html>Profile</a></div></article>
+          </div>
+        </div>
+        <div class="overlap-3"><div class="text-wrapper-7">Trends</div></div>
+        <div class="overlap-group-2">
+          <div class="text-wrapper-8" id="textContent" onclick="openPopup()">Type your post here</div>
+          <div class="rectangle"></div>
+          <div class="text-wrapper-9">Timeline</div>
+          <img class="prof-template" src="homepage-img/prof-template.png" />
+          <img class="submit-input" src="homepage-img/submit-input.png" />
+          <img class="file-input" src="homepage-img/file-input.png" />
+          <img class="image-input" src="homepage-img/image-input.png" />
+          
+          <div class="timeline-placeholder"></div></div>
+        </div>        
+      </div>
+    </div>
+
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-header">
+        <div class="text-wrapper">Cosmics</div>
+        <span class="popup-close" onclick="closePopup()">✕</span>
+      </div>
+      <textarea class="popup-input" id="popupInput" placeholder="Tell your cosmics tales!" maxlength="280"></textarea>
+      <div class="popup-actions">
+        <button class="popup-button" onclick="postCreatePost()">Post</button>
+        <button class="popup-button" onclick="closePopup()">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>

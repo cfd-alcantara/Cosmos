@@ -1,0 +1,285 @@
+@media screen and (max-width: 1500px) {
+  .home-page {
+    width: 60%;
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  /* Sidebar Left */
+  .home-page .overlap {
+    position: sticky;
+    width: 250px;
+    min-height: 100vh; 
+    height: auto; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  
+  .home-page .overlap-group {
+    width: 200px;
+    height: 75px;
+    top: 40px;
+    left: 3%; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper {
+    top: 33px;
+    left: 90px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .home-page .asstro-logo {
+    width: 75px;
+    height: 60px;
+  }
+  
+  .home-page .overlap-2 {
+    width: 200px;
+    height: 350px;
+    top: 150px;
+    margin-top: 20%;
+    left: 3%; 
+  }
+  
+  .home-page .div-wrapper {
+    width: 150px;
+    height: 50px;
+    top: 20px;
+    left: 25px;
+  }
+  
+  .home-page .text-wrapper-2 {
+    top: 11px;
+    left: 55px;
+    font-size: 20px;
+  }
+  
+  .home-page .text-wrapper-3 {
+    top: 100px;
+    left: 35%;
+    font-size: 20px;    
+  }
+  
+  .home-page .text-wrapper-4 {
+    top: 150px;
+    left: 25%;
+    font-size: 20px;  
+  }
+  
+  .home-page .text-wrapper-5 {
+    top: 200px;
+    left: 30%;
+    font-size: 20px;  
+  }
+  
+  .home-page .text-wrapper-6 {
+    top: 250px;
+    left: 28%;
+    font-size: 20px;  
+  }
+  
+  /*Sidebar Right*/
+  .home-page .overlap-3 {
+    position: absolute;
+    width: 250px;
+    min-height: 100vh;
+    left: 931px; 
+    height: auto; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper-7 {
+    font-size: 20px;
+  }
+  
+  /*Timeline Bar*/
+  .home-page .overlap-group-2 {
+    width: 675px;
+    left: 253px;
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+
+  .home-page .timeline-placeholder {
+    width: 70%;
+    height: 50%;
+    top: 75%;
+    left: 50%; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-page .overlap {
+    transform: translateX(-150%); 
+  }
+  
+  /*Sidebar Right*/
+  .home-page .overlap-3 {
+    position: absolute;
+    width: 155px;
+    min-height: 100vh;
+    left: 562px; 
+    height: auto; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper-7 {
+    font-size: 15px;
+  }
+  
+  /*Timeline Bar*/
+  .home-page .overlap-group-2 {
+    width: 550px;
+    left: 15px;
+    transform: translateX(-1%); 
+    transition: width 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper-8 {
+    top: 53px;
+    left: 100px;
+    font-size: 15px;
+    
+  }
+  
+  .home-page .rectangle {
+    width: 90%;
+    height: 3px;
+    top: 120px;
+    left: 5%;
+    border-radius: 2px;
+  }
+  
+  .home-page .text-wrapper-9 {
+    top: 151px;
+    left: 43px;
+    font-size:15px;
+  }
+  
+  .home-page .prof-template {
+    width: 52px;
+    height: 50px;
+    top: 40px;
+    left: 43px;
+  }
+  
+  .home-page .submit-input {
+    width: 30px;
+    height: 30px;
+    top: 53px;
+    left: 85%;
+  }
+  
+  .home-page .file-input {
+    width: 30px;
+    height: 30px;
+    top: 53px;
+    left: 75%;
+  }
+  
+  .home-page .image-input {
+    width: 25px;
+    height: 25px;
+    top: 53px;
+    left: 65%;
+  }
+
+  .home-page .timeline-placeholder {
+    width: 70%;
+    height: 25%;
+    top: 75%;
+    left: 50%; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /*Sidebar Right*/
+  .home-page .overlap-3 {
+    position: absolute;
+    width: 120px;
+    min-height: 100vh;
+    left: 320px; 
+    height: auto; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper-7 {
+    top: 10px;
+    left: 10px;
+    font-size: 7px;
+  }
+  
+  /*Timeline Bar*/
+  .home-page .overlap-group-2 {
+    width: 300px;
+    left: 20px;
+    transform: translateX(-1%); 
+    transition: width 0.5s ease-in;
+  }
+  
+  .home-page .text-wrapper-8 {
+    top: 25px;
+    left: 50px;
+    font-size: 7px;
+    
+  }
+  
+  .home-page .rectangle {
+    width: 90%;
+    height: 3px;
+    top: 50px;
+    left: 5%;
+    border-radius: 0.5px;
+  }
+  
+  .home-page .text-wrapper-9 {
+    top: 70px;
+    left: 20px;
+    font-size: 7px;
+  }
+  
+  .home-page .prof-template {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .home-page .submit-input {
+    width: 15px;
+    height: 15px;
+    top: 20px;
+    left: 85%;
+  }
+  
+  .home-page .file-input {
+    width: 15px;
+    height: 15px;
+    top: 20px;
+    left: 75%;
+  }
+  
+  .home-page .image-input {
+    width: 10px;
+    height: 10px;
+    top: 22px;
+    left: 65%;
+  }
+
+  .home-page .timeline-placeholder {
+    width: 70%;
+    height: 25%;
+    top: 75%;
+    left: 50%; 
+    transition: width 0.5s ease-in, min-height 0.5s ease-in;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .home-page .overlap {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="profilepage-style.css" />
+    <link rel="stylesheet" href="profilepage-posts-timeline.css" />
+    <link rel="stylesheet" href="profilepage-mediaquery.css" />
+    <link rel="stylesheet" href="popup-post.css" />
+    <script src="homepage-post-button.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay-page" id="overlayPage"></div>
+    <div class="user-page" id="blurPage">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="text-wrapper">Cosmos</div>
+            <img class="asstro-logo" src="homepage-img/asstro-logo.png" />
+          </div>
+          <div class="overlap-2">
+            <article><div class="sidebar-post" onclick="openPopup()">Post</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="h" class="sidebar-icons"><div class="sidebar-left"><a href=homepage.html>Home</a></div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="n" class="sidebar-icons"><div class="sidebar-left">Notifications</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="t" class="sidebar-icons"><div class="sidebar-left">Trending</div></article>
+            <article><img src="profilepage-img/placeholder.png" alt="m" class="sidebar-icons"><div class="sidebar-left"><a href=profilepage.html>Profile</a></div></article>
+          </div>
+        </div>
+        <div class="overlap-4"><div class="text-wrapper-8">Trends</div>
+            <div class="user-trending-placeholder"></div>
+        </div>
+        <div class="overlap-group-2">
+          <div class="rectangle"></div>
+          <div class="overlap-5">
+            <div class="text-wrapper-9">Default</div>
+            <div class="text-wrapper-10">@Default</div>
+            <img class="profile-icon-main" src="profilepage-img/profile-icon-main.png" />
+          </div>
+          <div class="text-wrapper-11">Posts</div>
+          <div class="text-wrapper-12">0 Following</div>
+          <div class="text-wrapper-13">0 Followers</div>
+          <div class="p-container">
+            <p class="p" id="profText">Your text goes here</p>
+          </div>
+          <div class="text-wrapper-14">Replies</div>
+          <div class="text-wrapper-15">Highlights</div>
+          <div class="text-wrapper-16">Likes</div>
+          <div class="user-posts-placeholder"></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-header">
+        <div class="text-wrapper">Cosmics</div>
+        <span class="popup-close" onclick="closePopup()">✕</span>
+      </div>
+      <textarea class="popup-input" id="popupInput" placeholder="Tell your cosmics tales!" maxlength="280"></textarea>
+      <div class="popup-actions">
+        <button class="popup-button" onclick="submitPost()">Post</button>
+        <button class="popup-button" onclick="closePopup()">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
