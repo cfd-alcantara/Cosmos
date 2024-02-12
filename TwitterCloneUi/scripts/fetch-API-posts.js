@@ -35,16 +35,18 @@ async function getPosts() {
     })
     .then(data => {
         data.forEach(user => {
+            console.log(user);
             const posts = user.content;
-            console.log(posts)
+            let postId = user.postId;
+            console.log(typeof postId)
+            // console.log(user.postId)
 
             // document.getElementById("posts-container").insertAdjacentHTML('beforeend', posts);
 
             var postDiv = document.createElement("div");
             postDiv.className = "post"
-            var username = "Cosmos";
 
-            postDiv.innerHTML = '<div class="post-username">' + username + '</div><div class="post-text">' + posts + '</div>';
+            postDiv.innerHTML = '<div class="post-username">' + user.postedBy + '</div><div class="post-text">' + posts + '</div>' + '<button class="like-button" onclick="likePost(\'' + postId + '\')">' + "Like" + '</button>';
 
             document.querySelector(".timeline-placeholder").appendChild(postDiv);
         })
@@ -59,4 +61,21 @@ async function getPosts() {
     // } else {
     //     console.log('failed');
     // }
+}
+
+async function likePost(postId) {
+    let token = localStorage.getItem("token");
+    console.log(postId)
+
+    const res = await fetch('http://localhost:3000/api/v1/posts/'+postId, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+            action: "like"
+        })
+    })
+    .catch(error => console.log(error));
 }

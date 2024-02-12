@@ -1,12 +1,12 @@
 function openPopup() {
     document.getElementById("overlayPage").style.display = "block";
     document.getElementById("popupContainer").style.display = "block";
-  }
+}
 
 function closePopup() {
     document.getElementById("overlayPage").style.display = "none";
     document.getElementById("popupContainer").style.display = "none";
-  }
+}
 
 function submitPost() {
     var postText = document.getElementById("popupInput").value;
@@ -24,4 +24,4 @@ function submitPost() {
     } else {
       alert("Post cannot be empty!");
     }
-  }
+}
